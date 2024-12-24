@@ -1,16 +1,20 @@
-## Hi there 👋
+<h1 align="center">Hey there 👋, I'm Saeed!</h1>
 
-<!--
-**devsxeed/devsxeed** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
+```py
+from datetime import date
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+class AboutMe():
+    def __init__(self):
+        self.username = "devsxeed"
+        self.pronouns = ("he", "him")
+        self.location = "Iran"
+        self.occupation = "Computer Engineering Student"
+        self.birthday = date(day=6, month=3, year=2004)
+        self.age = (date.today()-self.birthday).days/365  # 20 y/o
+        self.hobbies = ["Coding", "Gaming", "Music", "YouTube"]
+        self.interests = ["Programming", "Security", "Linux"]
+
+if __name__ == "__main__":
+    me = AboutMe()
+```
